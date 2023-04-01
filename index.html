@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+  
+   <head>
+
+
+    <style>
+
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: antiquewhite ;
+        }
+
+        .base1{
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            animation: bg 4.5s infinite;
+            
+        }
+
+        .ball{
+            background-color: #fff;
+            height: 90px;
+            width: 90px;
+            border-radius: 90px;
+            position: relative;
+            top: 100px;
+            left: 200px;
+            animation: bounce 0.9s infinite;
+            
+
+        }
+
+        .shadow{
+            position: absolute;
+            background-color: black;
+            width: 60px;
+            height: 5px;
+            top: 450px;
+            margin-left: 13.2%;
+            border-radius: 50%;
+            filter: blur(2px);
+            animation: shadow 0.9s infinite;
+
+        }
+
+        @keyframes bounce{
+            10%{
+                height: 80px;
+                width: 50px;
+                background: linear-gradient(rgb(242, 169, 182,darkred,orange));
+
+
+                }
+
+                30%{
+                height: 50px;
+                width: 90px;
+                background-color: green;
+                
+            }    
+            50%{
+                height: 60px;
+                width: 57px;
+                transform: translateY(280px);
+                background-color: blue;
+                
+                
+            }    
+            75%{
+                height: 50px;
+                width: 57px;
+                background-color: yellow;
+
+            }
+
+            100%{
+                transform: translate(0px);
+                
+            }
+
+
+        }
+
+        @keyframes bg{
+            10%{
+                background-color: chartreuse;
+                
+            }
+
+            30%{
+                background-color: aqua;
+            }
+
+            50%{
+                background-color: coral;
+            }
+
+            70%{
+                background-color: aliceblue;
+            }
+
+            100%{
+                background-color: dimgray;
+            }
+        }
+
+
+
+    </style>
+
+
+   </head>
+
+    <body>
+
+        <div class="base1">
+            
+                <div class="ball">
+    
+                </div>
+            
+            <div class="shadow"></div>
+        </div>
+
+
+
+
+
+    </body>
+
+
+
+
+</html>
